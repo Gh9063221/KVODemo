@@ -12,7 +12,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+//    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
+//    NSLog(@"%@", storyboard);
+//    UITableViewController *tabelViewController = [storyboard instantiateViewControllerWithIdentifier:@"TableViewController"];
+//    [tabelViewController initWithStyle:(UITableViewStylePlain)];
+
     return YES;
 }
 							

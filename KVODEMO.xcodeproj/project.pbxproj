@@ -17,7 +17,8 @@
 		B5F16D0217979EAD00E4278E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F16D0117979EAD00E4278E /* Default@2x.png */; };
 		B5F16D0417979EAD00E4278E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F16D0317979EAD00E4278E /* Default-568h@2x.png */; };
 		B5F16D0717979EAD00E4278E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F16D0517979EAD00E4278E /* MainStoryboard.storyboard */; };
-		B5F16D0A17979EAD00E4278E /* DLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F16D0917979EAD00E4278E /* DLViewController.m */; };
+		B5F16D1217979F8B00E4278E /* DLTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F16D1117979F8B00E4278E /* DLTableViewController.m */; };
+		B5F30DEF1797CF760066ED39 /* readme in Resources */ = {isa = PBXBuildFile; fileRef = B5F30DEE1797CF760066ED39 /* readme */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +36,9 @@
 		B5F16D0117979EAD00E4278E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		B5F16D0317979EAD00E4278E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		B5F16D0617979EAD00E4278E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		B5F16D0817979EAD00E4278E /* DLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLViewController.h; sourceTree = "<group>"; };
-		B5F16D0917979EAD00E4278E /* DLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLViewController.m; sourceTree = "<group>"; };
+		B5F16D1017979F8B00E4278E /* DLTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLTableViewController.h; sourceTree = "<group>"; };
+		B5F16D1117979F8B00E4278E /* DLTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLTableViewController.m; sourceTree = "<group>"; };
+		B5F30DEE1797CF760066ED39 /* readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		B5F16CE117979EAD00E4278E = {
 			isa = PBXGroup;
 			children = (
+				B5F30DEE1797CF760066ED39 /* readme */,
 				B5F16CF317979EAD00E4278E /* KVODEMO */,
 				B5F16CEC17979EAD00E4278E /* Frameworks */,
 				B5F16CEB17979EAD00E4278E /* Products */,
@@ -86,8 +89,8 @@
 				B5F16CFC17979EAD00E4278E /* DLAppDelegate.h */,
 				B5F16CFD17979EAD00E4278E /* DLAppDelegate.m */,
 				B5F16D0517979EAD00E4278E /* MainStoryboard.storyboard */,
-				B5F16D0817979EAD00E4278E /* DLViewController.h */,
-				B5F16D0917979EAD00E4278E /* DLViewController.m */,
+				B5F16D1017979F8B00E4278E /* DLTableViewController.h */,
+				B5F16D1117979F8B00E4278E /* DLTableViewController.m */,
 				B5F16CF417979EAD00E4278E /* Supporting Files */,
 			);
 			path = KVODEMO;
@@ -164,6 +167,7 @@
 				B5F16D0217979EAD00E4278E /* Default@2x.png in Resources */,
 				B5F16D0417979EAD00E4278E /* Default-568h@2x.png in Resources */,
 				B5F16D0717979EAD00E4278E /* MainStoryboard.storyboard in Resources */,
+				B5F30DEF1797CF760066ED39 /* readme in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +180,7 @@
 			files = (
 				B5F16CFA17979EAD00E4278E /* main.m in Sources */,
 				B5F16CFE17979EAD00E4278E /* DLAppDelegate.m in Sources */,
-				B5F16D0A17979EAD00E4278E /* DLViewController.m in Sources */,
+				B5F16D1217979F8B00E4278E /* DLTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +303,7 @@
 				B5F16D0F17979EAD00E4278E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

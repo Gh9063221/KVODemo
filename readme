@@ -1,0 +1,9 @@
+
+查找有序集合成员，比如NSMutableArray
+mutableArrayValueForKey:搜索方式如下：
+1. 搜索insertObject:in<Key>AtIndex:、removeObjectFrom<Key>AtIndex:或者insert<Key>:atIndexes、remove<Key>AtIndexes:格式的方法。
+如果至少一个insert方法和至少一个remove方法找到，那么同样返回一个可以响应NSMutableArray所有方法的代理集合。那么发送给这个代理集合的NSMutableArray消息方法，以insertObject:in<Key>AtIndex:、removeObjectFrom<Key>AtIndex:、insert<Key>:atIndexes、remove<Key>AtIndexes:组合的形式调用。还有两个可选实现的接口：replaceObjectIn<Key>AtIndex:withObject:、replace<Key>AtIndexes:with<Key>:。
+2. 否则，搜索set<Key>:格式的方法，如果找到，那么发送给代理集合的NSMutableArray最终都会调用set<Key>:方法。
+也就是说，mutableArrayValueForKey取出的代理集合修改后，用set<Key>:重新赋值回去。这样做效率会差很多，所以推荐实现上面的方法。
+3. 否则，那么如果类方法accessInstanceVariablesDirectly返回YES，那么按_<key>，<key>的顺序直接搜索成员名。如果找到，那么发送的NSMutableArray消息方法直接转交给这个成员处理。
+4. 再找不到，调用setValue:forUndefinedKey:。
